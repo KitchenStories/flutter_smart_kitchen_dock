@@ -52,7 +52,6 @@ class BluetoothAdapterListener {
 //          false
         }
       }
-    }
 
   fun generateUUIDFromProtocol(protocol: String): UUID {
     val protocolBytes = protocol.toByteArray(StandardCharsets.UTF_8)
@@ -198,7 +197,6 @@ class SmartKitchenDockPlugin: FlutterPlugin, EventChannel.StreamHandler, Activit
 
     println("Engine attached")
     context = flutterPluginBinding.applicationContext
-//    handler = Handler(Looper.getMainLooper());
     eventChannel = EventChannel(flutterPluginBinding.binaryMessenger, "smart_kitchen_dock_events")
     eventChannel?.setStreamHandler(this)
   }
