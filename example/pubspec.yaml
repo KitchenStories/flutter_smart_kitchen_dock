@@ -36,12 +36,7 @@ dependencies:
   cupertino_icons: ^1.0.2
 
   flutter_smart_kitchen_dock:
-    git:
-      url: https://github.com/KitchenStories/flutter_smart_kitchen_dock/
-      ref: feature/android-support
-
-  equatable: ^2.0.5
-  bloc: ^8.1.2
+    path: ../
 
 dev_dependencies:
   flutter_test:
