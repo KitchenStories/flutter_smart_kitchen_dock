@@ -1,3 +1,7 @@
+## 0.0.3
+
+- Set the controller to NULL after it gets disposed on Android
+
 ## 0.0.2
 
 - Handle listener lifetime correctly in iOS

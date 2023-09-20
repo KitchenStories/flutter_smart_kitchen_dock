@@ -61,6 +61,7 @@ class MethodChannelSmartKitchenDock extends SmartKitchenDockPlatform {
         HardwareKeyboard.instance.addHandler(handleKeyboard);
       }, onCancel: () {
         HardwareKeyboard.instance.removeHandler(handleKeyboard);
+        controller = null;
       });
       return controller!.stream;
     }
